@@ -1,0 +1,16 @@
+
+
+#include <stdio.h>
+ 
+int main() {
+ 
+    int qntd;
+    scanf("%d", &qntd);
+
+    for(int i=1; i<qntd; i++){
+        printf("Ho ");
+    } 
+    printf("Ho!\n");
+ 
+    return 0;
+}

@@ -1,0 +1,21 @@
+
+
+#include <stdio.h>
+ 
+int main() {
+ 
+    int nota;
+    char n = ' ';
+
+    scanf("%d", &nota);
+
+    if(nota == 0) n = 'E';
+    else if(nota <= 35) n = 'D';
+    else if(nota <= 60) n = 'C';
+    else if(nota <= 85) n = 'B';
+    else n = 'A';
+  
+    printf("%c\n", n);
+ 
+    return 0;
+}

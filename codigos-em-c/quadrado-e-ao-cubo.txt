@@ -1,0 +1,15 @@
+
+
+#include <stdio.h>
+ 
+int main() {
+ 
+    int qntd;
+    scanf("%d", &qntd);
+
+    for(int i=1; i<=qntd; i++){
+        printf("%d %d %d\n", i, i*i, i*i*i);
+    }
+ 
+    return 0;
+}

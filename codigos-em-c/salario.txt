@@ -1,0 +1,16 @@
+
+
+#include <stdio.h>
+ 
+int main() {
+ 
+    int numFun, qntdHrs;
+    float valorHora;
+
+    scanf("%d %d %f", &numFun, &qntdHrs, &valorHora);
+
+    printf("NUMBER = %d", numFun);
+    printf("\nSALARY = U$ %.2f\n", qntdHrs * valorHora);
+ 
+    return 0;
+}

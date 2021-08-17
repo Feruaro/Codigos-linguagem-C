@@ -1,0 +1,26 @@
+
+
+#include <stdio.h>
+ 
+int main() {
+ 
+    int v1, v2, v3, x = 0;
+    scanf("%d %d %d", &v1, &v2, &v3);
+
+    int x1 = v1, x2 = v2, x3 = v3;
+
+    if(v1 > v2) x = v1, v1 = v2, v2 = x;
+    if(v1 > v3) x = v1, v1 = v3, v3 = x;   
+    if(v2 > v3) x = v2, v2 = v3, v3 = x;
+
+    printf("%d\n", v1);
+    printf("%d\n", v2);
+    printf("%d", v3);
+    printf("\n\n");
+    printf("%d\n", x1);
+    printf("%d\n", x2);
+    printf("%d", x3);
+    printf("\n");
+ 
+    return 0;
+}

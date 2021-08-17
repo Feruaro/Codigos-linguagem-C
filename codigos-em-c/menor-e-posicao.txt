@@ -1,0 +1,23 @@
+
+
+#include <stdio.h>
+ 
+int main() {
+ 
+    int qntd, pos = 0, menor;
+    scanf("%d", &qntd);
+    int x[qntd];
+
+    for(int i=0; i<qntd; i++){
+        scanf("%d", &x[i]);
+    }
+  
+    menor = x[0];
+    for(int i=1; i<qntd; i++){
+        if(menor > x[i]) menor = x[i], pos = i;         
+    }
+
+    printf("Menor valor: %d\nPosicao: %d\n", menor, pos);
+    
+    return 0;
+}

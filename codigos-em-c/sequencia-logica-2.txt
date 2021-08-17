@@ -1,0 +1,16 @@
+
+
+#include <stdio.h>
+ 
+int main() {
+ 
+    int x, y, a = 0;
+    scanf("%d %d", &x, &y);
+
+    for(int i=1; i<=y; i++){
+        if(a < x-1) printf("%d ", i), a++;
+        else printf("%d\n", i), a = 0;
+    }
+ 
+    return 0;
+}

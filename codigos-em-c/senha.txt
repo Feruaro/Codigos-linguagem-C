@@ -1,0 +1,15 @@
+
+
+#include <stdio.h>
+ 
+int main() {
+ 
+    int senha;
+
+    do{
+        scanf("%d", &senha);
+        printf("%d\n", senha - 1);
+    }while(senha < 9999);
+ 
+    return 0;
+}

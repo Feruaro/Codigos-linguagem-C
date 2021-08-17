@@ -1,0 +1,33 @@
+
+
+#include <stdio.h>
+ 
+int main() {
+ 
+    int golG, golI, c, total = 0;
+    int qntdVitG = 0, qntdVitI = 0, empate = 0;
+
+    do{
+        scanf("%d %d", &golI, &golG);
+    
+        printf("Novo grenal (1-sim 2-nao)\n");
+        scanf("%d", &c);
+
+        if(golG > golI) qntdVitG++;
+        else if(golG == golI) empate++;
+        else qntdVitI++;
+
+        total++;
+    }while(c == 1);
+
+    printf("%d grenais\n", total);
+    printf("Inter:%d\n", qntdVitI);
+    printf("Gremio:%d\n", qntdVitG);
+    printf("Empates:%d\n", empate);
+   
+    if(qntdVitG > qntdVitI) printf("Gremio venceu mais\n");
+    else if(qntdVitG == qntdVitI) printf("Nao houve vencedor\n");
+    else printf("Inter venceu mais\n");
+     
+    return 0;
+}

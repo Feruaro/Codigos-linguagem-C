@@ -1,0 +1,17 @@
+
+
+#include <stdio.h>
+ 
+int main() {
+ 
+    int a, b, menor = 0, maior = 0;
+    scanf("%d %d", &a, &b);
+
+    if(a < b) menor = a, maior = b;
+    else menor = b, maior = a;
+
+    if(maior%menor == 0) printf("Sao Multiplos\n");
+    else printf("Nao sao Multiplos\n");
+
+    return 0;
+}

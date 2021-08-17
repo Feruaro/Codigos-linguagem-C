@@ -1,0 +1,21 @@
+
+
+#include <stdio.h>
+ 
+int main() {
+ 
+    int n, i = 0, num = 0;
+    scanf("%d", &n);
+
+    while(i < n){
+        num++;
+        for(int i=0; i<3; i++){
+            printf("%d ", num);
+            num++;
+        }
+        printf("PUM\n");
+        i++;
+    }
+ 
+    return 0;
+}

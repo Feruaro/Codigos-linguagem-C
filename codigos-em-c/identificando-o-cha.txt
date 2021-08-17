@@ -1,0 +1,18 @@
+
+
+#include <stdio.h>
+ 
+int main() {
+ 
+    int cha, p[5], qntd = 0;
+    scanf("%d", &cha);
+
+    for(int i=0; i<5; i++){
+        scanf("%d", &p[i]);
+        if(p[i] == cha) qntd++;
+    }
+
+    printf("%d\n", qntd);
+ 
+    return 0;
+}

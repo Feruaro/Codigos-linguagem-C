@@ -1,0 +1,23 @@
+
+
+#include <stdio.h>
+ 
+int main() {
+ 
+    int x, z, somaX = 0, qntd = 0;
+    scanf("%d", &x);
+
+    do{
+        scanf("%d", &z);
+    }while(z <= x);
+
+    do{
+        somaX += x;
+        qntd++;
+        x++;
+    }while(somaX < z);
+
+    printf("%d\n", qntd);
+ 
+    return 0;
+}

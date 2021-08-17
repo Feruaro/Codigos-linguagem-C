@@ -1,0 +1,18 @@
+
+
+#include <stdio.h>
+ 
+int main() {
+ 
+    int qntd, num, qntdI = 0, qntdO = 0;
+    scanf("%d", &qntd);
+
+    for(int i=0; i<qntd; i++){
+        scanf("%d", &num);
+        if(num >= 10 && num <= 20) qntdI++;
+        else qntdO++;
+    }
+    printf("%d in\n%d out\n", qntdI, qntdO);
+ 
+    return 0;
+}

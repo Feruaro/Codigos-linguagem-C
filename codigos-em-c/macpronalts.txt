@@ -1,0 +1,27 @@
+
+
+#include <stdio.h>
+ 
+int main() {
+ 
+    int qntd, prod;
+    double qntdProd, soma = 0;
+    scanf("%d", &qntd);
+
+    for(int i=0; i<qntd; i++){
+        do{
+            scanf("%d", &prod);
+        }while(prod < 1001 || prod > 1005);
+        scanf("%lf", &qntdProd);
+    
+        if(prod == 1001) soma += (qntdProd * 1.50);
+        else if(prod == 1002) soma += (qntdProd * 2.50);
+        else if(prod == 1003) soma += (qntdProd * 3.50);
+        else if(prod == 1004) soma += (qntdProd * 4.50);
+        else if(prod == 1005) soma += (qntdProd * 5.50);
+    }
+
+    printf("%.2lf\n", soma);
+ 
+    return 0;
+}

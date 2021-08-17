@@ -1,0 +1,18 @@
+
+
+#include <stdio.h>
+ 
+int main() {
+ 
+    int senha = 2002, tentativa;
+
+    do{
+        scanf("%d", &tentativa);
+        
+        if(senha == tentativa) printf("Acesso Permitido\n");
+        else printf("Senha Invalida\n");
+        
+    }while(senha != tentativa);
+ 
+    return 0;
+}

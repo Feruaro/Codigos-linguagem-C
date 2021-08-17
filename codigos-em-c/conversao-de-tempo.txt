@@ -1,0 +1,20 @@
+
+
+#include <stdio.h>
+ 
+int main() {
+ 
+    int horario, h = 0, m = 0, s = 0;
+    scanf("%d", &horario);
+ 
+    //horas
+    h = horario / 3600, horario = horario%3600;
+    //minutos
+    m = horario / 60, horario = horario%60;
+    //segundos
+    s = horario / 1;
+
+    printf("%d:%d:%d\n", h, m, s);
+ 
+    return 0;
+}

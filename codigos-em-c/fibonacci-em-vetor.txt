@@ -1,0 +1,28 @@
+
+
+#include <stdio.h>
+ 
+int main() {
+ 
+    long long int qntd, num, n1, n2, f = 0;
+    scanf("%lld", &qntd);
+
+    for(int i=0; i<qntd; i++){
+        scanf("%lld", &num);
+        n1 = 0;
+        n2 = 1;
+
+        if(num == n1) printf("Fib(%lld) = %lld\n", num, num);
+        else if(num == n2) printf("Fib(%lld) = %lld\n", num, num);
+        else{
+            for(int j=1; j<num; j++){
+                f = n1 + n2;
+                n1 = n2;
+                n2 = f;
+            }
+            printf("Fib(%lld) = %lld\n", num, f);
+        }
+    }
+ 
+    return 0;
+}

@@ -1,0 +1,16 @@
+
+
+#include <stdio.h>
+ 
+int main() {
+ 
+    for(int i=1; i<=9; i+=2){
+        int j = 7;
+        for(int x=0; x<3; x++){
+            printf("I=%d J=%d\n", i, j);
+            j--;
+        }
+    }
+ 
+    return 0;
+}

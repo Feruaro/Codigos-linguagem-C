@@ -1,0 +1,31 @@
+
+
+#include <stdio.h>
+ 
+int main() {
+ 
+    int idade, ano = 0, mes = 0, dia = 0;
+    scanf("%d", &idade);
+
+    //calcula qntd de anos
+    while(idade - 365 >= 0){
+        idade -= 365;
+        ano++;
+    }
+    //calcula qntd de meses
+    while(idade - 30 >= 0){
+        idade -= 30;
+        mes++;
+    }
+    //calcula qntd de dias
+    while(idade - 1 >= 0){
+        idade -= 1;
+        dia++;
+    }
+
+    printf("%d ano(s)", ano);
+    printf("\n%d mes(es)", mes);
+    printf("\n%d dia(s)\n", dia);
+ 
+    return 0;
+}

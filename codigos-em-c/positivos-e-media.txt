@@ -1,0 +1,22 @@
+
+
+#include <stdio.h>
+ 
+int main() {
+ 
+    float num[6], media = 0;
+    int qntdPos = 0;
+  
+    for(int i=0; i<6; i++){
+        scanf("%f", &num[i]);
+        if(num[i] > 0){
+            qntdPos++;
+            media += num[i];
+        }
+    }
+
+    printf("%d valores positivos\n", qntdPos);
+    printf("%.1f\n", media / qntdPos);
+ 
+    return 0;
+}

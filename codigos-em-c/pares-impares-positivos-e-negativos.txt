@@ -1,0 +1,28 @@
+
+
+#include <stdio.h>
+ 
+int main() {
+ 
+    int num[5], qntdPar = 0, qntdImpar = 0, qntdPos = 0, qntdNeg = 0;
+
+    for(int i=0; i<5; i++){
+        scanf("%d", &num[i]);
+    }
+  
+    for(int i=0; i<5; i++){      
+        if(num[i] > 0) qntdPos++;
+        else if(num[i] < 0) qntdNeg++;
+
+        if(num[i]%2 == 0) qntdPar++;
+        else qntdImpar++;
+        
+    }
+
+    printf("%d valor(es) par(es)", qntdPar);
+    printf("\n%d valor(es) impar(es)", qntdImpar);
+    printf("\n%d valor(es) positivo(s)", qntdPos);
+    printf("\n%d valor(es) negativo(s)\n", qntdNeg);
+ 
+    return 0;
+}

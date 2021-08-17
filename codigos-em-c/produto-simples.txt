@@ -1,0 +1,13 @@
+
+
+#include <stdio.h>
+ 
+int main() {
+ 
+    int v1, v2;
+    scanf("%d %d", &v1, &v2);
+
+    printf("PROD = %d\n", v1 * v2);
+ 
+    return 0;
+}

@@ -1,0 +1,15 @@
+
+
+#include <stdio.h>
+ 
+int main() {
+ 
+    int d;
+    float km;
+
+    scanf("%d %f", &d, &km);
+
+    printf("%.3f km/l\n", d / km);
+ 
+    return 0;
+}

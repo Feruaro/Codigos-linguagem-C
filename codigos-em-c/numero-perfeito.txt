@@ -1,0 +1,21 @@
+
+
+#include <stdio.h>
+ 
+int main() {
+ 
+    int qntd, num,c, soma;
+    scanf("%d", &qntd);
+  
+    for(int i=0; i<qntd; i++){
+        scanf("%d", &num); 
+        soma = 0;
+        for(int x=1; x<num; x++){
+            if(num%x == 0) soma += x;
+        }
+        if(soma == num) printf("%d eh perfeito\n", num);
+        else printf("%d nao eh perfeito\n", num);
+    }
+ 
+    return 0;
+}

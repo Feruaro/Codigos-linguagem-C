@@ -1,0 +1,23 @@
+
+
+#include <stdio.h>
+ 
+int main() {
+ 
+    int qntd, c, s, aux;
+    scanf("%d", &qntd);
+
+    for(int i=0; i<qntd; i++){
+        scanf("%d", &c);
+        s = 1;
+        aux = 1;
+        for(int i=1; i<c; i++){
+            //impar é (-) e par é (+)
+            if(aux%2 != 0) s -= 1, aux++;
+            else if(aux%2 == 0) s += 1, aux++;
+        }
+        printf("%d\n", s);
+    }
+ 
+    return 0;
+}

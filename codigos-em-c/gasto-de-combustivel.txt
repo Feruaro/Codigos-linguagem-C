@@ -1,0 +1,13 @@
+
+
+#include <stdio.h>
+ 
+int main() {
+ 
+    int km, h;
+    scanf("%d %d", &h, &km);
+
+    printf("%.3f\n", (km / 12.0) * h);
+ 
+    return 0;
+}

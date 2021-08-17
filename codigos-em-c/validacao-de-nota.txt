@@ -1,0 +1,21 @@
+
+
+#include <stdio.h>
+ 
+int main() {
+ 
+    double nota, media = 0;
+    int i = 0;
+
+    do{
+        scanf("%lf", &nota);
+        
+        if(nota >=0 && nota <= 10) media += nota, i++;
+        else printf("nota invalida\n");
+        
+    }while(i < 2);
+
+    printf("media = %.2lf\n", media / 2);
+ 
+    return 0;
+}
