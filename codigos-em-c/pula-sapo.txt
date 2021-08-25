@@ -1,0 +1,26 @@
+
+
+#include <stdio.h>
+ 
+int main() {
+ 
+    int alt_sapo, qntd, dif = 0, aux = 0;
+    scanf("%d %d", &alt_sapo, &qntd);
+    int alt_canos[qntd];
+
+    for(int i=0; i<qntd; i++){
+        scanf("%d", &alt_canos[i]);
+    }
+
+    for(int i=1; i<qntd; i++){
+        if(alt_canos[i] > alt_canos[i-1]) dif = (alt_canos[i] - alt_canos[i-1]);
+        else dif = (alt_canos[i-1] - alt_canos[i]);
+
+        if(dif > alt_sapo) aux = 1, break;
+    }
+
+    if(aux == 1) printf("GAME OVER\n");
+    else printf("YOU WIN\n");
+ 
+    return 0;
+}
