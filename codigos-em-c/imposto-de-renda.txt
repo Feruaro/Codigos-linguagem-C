@@ -1,0 +1,18 @@
+
+
+#include <stdio.h>
+ 
+int main() {
+ 
+    double valor, dif = 0;
+    scanf("%lf", &valor);
+
+    if(valor > 4500.00) dif += (valor - 4500.00) * 0.28, valor = 4500.00;
+    if(valor > 3000.00 && valor <= 4500.00) dif += (valor - 3000.00) * 0.18, valor = 3000.00;
+    if(valor > 2000.00 && valor <= 3000.00) dif += (valor - 2000.00) * 0.08;
+  
+    if(valor >= 0 && valor <= 2000.00) printf("Isento\n");
+    else printf("R$ %.2lf\n", dif);
+ 
+    return 0;
+}
