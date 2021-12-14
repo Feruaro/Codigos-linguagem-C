@@ -1,4 +1,4 @@
-<img align="right" alt="Fe-C" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
+<img align="right" alt="Fe-C" height="90" width="100" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
 
 ## Códigos na Linguagem C:
 
